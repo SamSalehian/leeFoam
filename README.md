@@ -4,6 +4,23 @@ Linearized Euler Equations (LEE) solver for Computational Aeroacoustics (CAA) ap
 ![OpenFOAM ESI](https://github.com/WENO-OF/WENOEXT/actions/workflows/c-ofESI.yml/badge.svg)
 ![OpenFOAM Org](https://github.com/WENO-OF/WENOEXT/actions/workflows/c-ofORG.yml/badge.svg) 
 
+## Installation
+
+1. Clone the directory with git clone https://github.com/WENO-OF/WENOEXT.git
+
+2. Execute Allwclean to cleanup the library
+
+3. Execute Allwmake to build the library. 
+
+## Tutorials
+
+### 1D Wave
+* (Under Construction)
+
+### Acoustic Pulse
+
+* (Under Construction)
+
 ## License
 This OpenFOAM library is under the GNU General Public License.
 
