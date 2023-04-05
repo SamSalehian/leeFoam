@@ -6,7 +6,7 @@ Linearized Euler Equations (LEE) solver for Computational Aeroacoustics (CAA) ap
 
 ## Installation
 
-1. Clone the directory with git clone https://github.com/WENO-OF/WENOEXT.git
+1. Clone the directory with git clone https://github.com/SamSalehian/leeFoam.git
 
 2. Execute Allwclean to cleanup the library
 
