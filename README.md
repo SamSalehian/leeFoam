@@ -1,5 +1,5 @@
 # leeFoam
-Linearized Euler Equations (LEE) solver for Computational Aero-Acoustics (CAA) applications within OpenFOAM framework.
+Linearized Euler Equations (LEE) solver for Computational Aeroacoustics (CAA) applications within OpenFOAM framework.
 
 ![OpenFOAM ESI](https://github.com/WENO-OF/WENOEXT/actions/workflows/c-ofESI.yml/badge.svg)
 ![OpenFOAM Org](https://github.com/WENO-OF/WENOEXT/actions/workflows/c-ofORG.yml/badge.svg) 
