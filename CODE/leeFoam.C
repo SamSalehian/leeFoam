@@ -5,8 +5,7 @@
     \\  /    A nd           | https://urldefense.com/v3/__http://www.openfoam.com__;!!Pe9-MuB9P6Cr!BfDls6hCL059-0XJXkWiQuXDqA7XAjhR3P1uL2HtVDkPOHGlR1Qw3XRhk2AI4P17auM$ 
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
-    Copyright (C) 2022 Patrick Good, Embry-Riddle Aeronautical University 
-				  & Seyyed Salehian, Tuskegee University
+    Copyright (C) 2022 Sam Salehian & Patrick Good
 -------------------------------------------------------------------------------
 License
     This file is part of OpenFOAM.
