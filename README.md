@@ -22,6 +22,7 @@ Linearized Euler Equations (LEE) solver for Computational Aeroacoustics (CAA) ap
 ### 2D Pulse
 The convection of the Gaussian pulse in uniform flow
 
+![Picture1](https://user-images.githubusercontent.com/50889406/230477592-e0e674b2-3b3f-4ba7-9aaf-28cb302e8023.png)
 
 
 ####  Acoustic pressure along the x-axis at t=60 computed using leeFoam for L/N=4,2,1, and 0.5, compared with the analytical solution.
