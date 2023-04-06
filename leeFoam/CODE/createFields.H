@@ -106,7 +106,7 @@ volScalarField rho
     mesh
 );
 
-// damping coef ; D = w*frequency*blendFactor
+// damping coef = w*frequency*blendFactor
 Info << nl << "Reading dampining coef field" << endl;
 volScalarField D
 (
@@ -116,12 +116,11 @@ volScalarField D
 		runTime.timeName(),
 		mesh,
 		IOobject::READ_IF_PRESENT,
-		IOobject::NO_WRITE
+		IOobject::AUTO_WRITE
 	),
     mesh
 );
 
-// Acoustic Relaxation Term (ART)
 Info << nl << "Reading dampining coef field" << endl;
 volScalarField D2
 (
@@ -131,10 +130,12 @@ volScalarField D2
 		runTime.timeName(),
 		mesh,
 		IOobject::READ_IF_PRESENT,
-		IOobject::NO_WRITE
+		IOobject::AUTO_WRITE
 	),
     mesh
 );
+
+
 
 // creating a flux field
 // this field is used in the matrix operations like laplace and divergence

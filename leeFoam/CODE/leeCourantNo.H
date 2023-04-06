@@ -27,7 +27,7 @@ Global
     LEECourantNo
 
 Description
-    Calculates and outputs the perturbation and base-flow Courant Numbers.
+    Calculates and outputs the mean and maximum Courant Numbers.
 
 \*---------------------------------------------------------------------------*/
 

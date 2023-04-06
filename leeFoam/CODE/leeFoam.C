@@ -5,7 +5,8 @@
     \\  /    A nd           | https://urldefense.com/v3/__http://www.openfoam.com__;!!Pe9-MuB9P6Cr!BfDls6hCL059-0XJXkWiQuXDqA7XAjhR3P1uL2HtVDkPOHGlR1Qw3XRhk2AI4P17auM$ 
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
-    Copyright (C) 2022 Sam Salehian & Patrick Good
+    Copyright (C) 2022 Patrick Good, Embry-Riddle Aeronautical University 
+				  & Seyyed Salehian, Tuskegee University
 -------------------------------------------------------------------------------
 License
     This file is part of OpenFOAM.
@@ -52,8 +53,8 @@ int main(int argc, char *argv[])
     {
 		Info << nl  << "Time = " << runTime.timeName() << endl;
 		Info << "dt = " << runTime.deltaT().value() << endl;
-		
-		// Base-flow & Perturbation Cournant No are calculated 		
+		// Base-flow & Perturbation Cournant No are calculated 
+		// and plotted in #include "leeCourantNo.H"
 		#include "leeCourantNo.H"
 
 		// fluxes defined in createFields.h
@@ -64,7 +65,6 @@ int main(int argc, char *argv[])
 		// fluxes defined within the time loop
 		// rhoPhi0 -> rho*U0
 		// rho0Phi -> rho0*U
-		
 		surfaceScalarField rho0Phi
 		(
 			"rho0Phi",
@@ -76,12 +76,15 @@ int main(int argc, char *argv[])
 			linearInterpolate(U0) & mesh.Sf()
 		);
 
+
+
 		//Continuity eqn
 		fvScalarMatrix contEqn
         ( 
            fvm::ddt(rho) 
 		   + fvm::div(rPhi0, rho)
 		   + fvc::div(rho0Phi)
+
         );
 		contEqn.solve();
 		

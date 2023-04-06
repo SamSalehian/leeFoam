@@ -39,6 +39,8 @@ divSchemes
     div(phi,U0)            Gauss limitedLinear 1.0;
     div(phi0,U)            Gauss limitedLinear 1.0;
     div(phi0,U0)           Gauss limitedLinear 1.0;
+	
+	div(rPhi0,rho)           Gauss limitedLinear 1.0;
 
     div(U0)            	   Gauss linear;
     div(U)		           Gauss linear;
