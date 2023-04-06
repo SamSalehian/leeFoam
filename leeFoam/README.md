@@ -9,9 +9,11 @@ Linearized Euler Equations (LEE) solver for Computational Aeroacoustics (CAA) ap
 1. Clone the directory with
     `git clone https://github.com/SamSalehian/leeFoam.git`
 
-2. Execute `Allwclean` to cleanup the library 
+2. Execute `chmod +x Allwclean` and `chmod +x Allwmake`.	
 
-3. Execute `Allwmake` to build the library
+3. Execute `Allwclean` to cleanup the library 
+
+4. Execute `Allwmake` to build the library
 
 
 ## Tutorials
