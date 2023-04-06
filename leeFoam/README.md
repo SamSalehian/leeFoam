@@ -1,15 +1,13 @@
 # leeFoam
 Linearized Euler Equations (LEE) solver for Computational Aeroacoustics (CAA) applications within OpenFOAM framework.
-
-![OpenFOAM ESI](https://github.com/WENO-OF/WENOEXT/actions/workflows/c-ofESI.yml/badge.svg)
-![OpenFOAM Org](https://github.com/WENO-OF/WENOEXT/actions/workflows/c-ofORG.yml/badge.svg) 
+ 
 
 ## Installation
 
 1. Clone the directory with
     `git clone https://github.com/SamSalehian/leeFoam.git`
 
-2. Execute `chmod +x Allwclean` and `chmod +x Allwmake`.	
+2. Execute `chmod +x Allwclean` and `chmod +x Allwmake`
 
 3. Execute `Allwclean` to cleanup the library 
 
