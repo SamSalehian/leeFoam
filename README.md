@@ -19,7 +19,7 @@ Linearized Euler Equations (LEE) solver for Computational Aeroacoustics (CAA) ap
 ### 1D Wave
 * (Under Construction)
 
-### Acoustic Pulse
+### 2D Pulse
 
 * (Under Construction)
 
