@@ -6,7 +6,7 @@ cd ${0%/*} || exit 1    # run from this directory
 
 cp -r 0_orig 0
 
-# Initialize via expressions
+# Initial Solution via Expressions
 runApplication setExprFields
 
 # Decompose
