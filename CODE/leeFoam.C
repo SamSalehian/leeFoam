@@ -76,15 +76,12 @@ int main(int argc, char *argv[])
 			linearInterpolate(U0) & mesh.Sf()
 		);
 
-
-
 		//Continuity eqn
 		fvScalarMatrix contEqn
         ( 
            fvm::ddt(rho) 
 		   + fvm::div(rPhi0, rho)
 		   + fvc::div(rho0Phi)
-
         );
 		contEqn.solve();
 		
@@ -113,7 +110,6 @@ int main(int argc, char *argv[])
 		);	
 		PEqn.solve();
 
-		
 		runTime.write();
 
 	    // print execution time for preformance calculations  
