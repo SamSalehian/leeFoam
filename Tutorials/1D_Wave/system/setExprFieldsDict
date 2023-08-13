@@ -1,0 +1,86 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1912                                 |
+|   \\  /    A nd           | Website:  https://urldefense.com/v3/__http://www.openfoam.com__;!!Pe9-MuB9P6Cr!WOIaCJ-Vldf4ZrBqYleMEPx11qajfT2h_MkZ_jxlpxG080WvHqaSJz6esdlgBjNtI8MXKWUMZ3vwtiITT97dcRMT$                       |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      setExprFieldsDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+
+expressions
+(
+	 Damping_Coeff
+    {
+        field       D;
+		
+		dimensions      [0 0 -1 0 0 0 0];
+		
+        variables
+        (
+			"w = 10" //default from built in module
+			"f = 0.05" 
+			"xs = 100"
+			"r1 = 100"
+			"r2 = 150"
+			"pi = 3.14159"
+			"post = (pos().y()*pos().y() + pos().x()*pos().x() + pos().z()*pos().z())"
+			"blendFactor = (post > r2*r2) ? 1 : (1/(r2*r2-r1*r1))*(post-(r1*r1)) "				
+        );
+
+        condition
+        #{
+
+			(pos().x() > xs)
+
+        #};
+
+        expression
+        #{
+			w*f*blendFactor
+        #};
+    }
+
+	 Damping_Coeff
+    {
+        field       D2;
+		
+       dimensions      [0 2 -1 0 0 0 0];
+		
+        variables
+        (	
+			"xs = 100"
+			"phi = 0.05"			
+        );
+
+        condition
+        #{
+
+			(pos().x() > xs)
+
+        #};
+
+        expression
+        #{
+			phi
+        #};
+    }
+
+);
+
+
+// ************************************************************************* //
+
+
+
+
+
+
+
