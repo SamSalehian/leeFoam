@@ -6,7 +6,9 @@ cd ${0%/*} || exit 1    # run from this directory
 
 cp -r 0_orig 0
 
-# runApplication setExprFields
+runApplication blockMesh
+
+runApplication setExprFields
 
 # Decompose
 runApplication decomposePar -latestTime
