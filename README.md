@@ -17,7 +17,9 @@ Linearized Euler Equations (LEE) solver for Computational Aeroacoustics (CAA) ap
 ## Tutorials
 
 ### 1D Wave
-* (Under Construction)
+One dimentional wave convecting through a stagnant mean flow
+
+####  Acoustic pressure signal at x=100 computed using leeFoam compared with the analytical solution.
 
 ### 2D Pulse
 The convection of the Gaussian pulse in uniform flow
