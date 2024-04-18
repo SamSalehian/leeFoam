@@ -22,7 +22,7 @@ boundaryField
 {
 	inlet
 	{
-//  U=A+s*sin(2*pi*t)+l
+//  U=A*s*sin(2*pi*t)+l
     type uniformFixedValue;
     uniformValue sine;
     uniformValueCoeffs
